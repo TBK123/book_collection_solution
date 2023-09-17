@@ -27,7 +27,7 @@ default: &default
 
 development:
   <<: *default
-  database: book_collection_development
+  database: book_collection_solution
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -85,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: book_collection_production
+  database: book_collection_solution
   username: book_collection
   password: <%= ENV["BOOK_COLLECTION_DATABASE_PASSWORD"] %>
